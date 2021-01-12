@@ -1,14 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>login form</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Login</title>
+    <style>
+input{
+  margin-bottom: 15px
+}
+.container{
+  width:50%
+}
+</style>
 </head>
-<body>
-	<form method="post">
-	<input type="name" name="usuari"></input>
-	<input type="password" 
- name="contrasenya"></input>
 
-	</form>
+<body>
+
+<div class="container">
+  <form method="POST" action="/login"  >
+      <h2>Login</h2>
+      <input name="nom" type="text" class="form-control" placeholder="usuario"autofocus="true"/><br>
+      <input name="contrasenya" type="password" class="form-control" placeholder="Contrasenya"/><br>
+      <button type="submit">Login</button>
+    
+  </form>
+</div>
 </body>
 </html>
