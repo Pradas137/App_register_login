@@ -16,7 +16,7 @@ app.get('/', (req,res) => {
 */
 
 if (typeof localStorage === "undefined" || localStorage===null) {
-    var localStorage=require('node-localstorage').LocalStorage;
+    var LocalStorage=require('node-localstorage').LocalStorage;
     localStorage= new LocalStorage('./scratch');
 }
 
