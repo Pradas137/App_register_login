@@ -4,20 +4,50 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Register</title>
-  <style>
-    input{
-      margin-bottom: 15px
-      }
-    .container{
-      width:50%
-    }
-  </style>
+    <style>
+body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 3px solid #f1f1f1;}
 
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+    font-size: 20px;
+
+}
+
+h1 {text-align:center;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  font-size: 20px;
+
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.container {
+  padding: 16px;
+}
+
+</style>
 </head>
 <body>
 <div class="container">
   <form class="login-form" method="POST" action="/register"  >
-    <h2 class="form-heading">Register</h2>
+    <h1>Register</h1>
     <input name="nom" type="text" class="form-control" placeholder="nom" autofocus="true"/><br>
     <input name="contrasenya" type="password" class="form-control" placeholder="contrasenya" /><br>
     <button type="submit">register</button>

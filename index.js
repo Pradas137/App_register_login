@@ -45,9 +45,9 @@ app.post('/login', function(req,res) {
     console.log("Contra2="+contra2)
 
     if ( contra2==contrasenya ) {
-        res.send("OK")
+        res.send("Contraseña correcta")
     } else {
-        res.send("NotOK")
+        res.send("Contraseña Incorecta")
     }
 })
 

@@ -5,12 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Login</title>
     <style>
-input{
-  margin-bottom: 15px
+body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 3px solid #f1f1f1;}
+
+h1 {text-align:center;
 }
-.container{
-  width:50%
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-size: 20px;
+
 }
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+    font-size: 20px;
+
+
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.container {
+  padding: 16px;
+}
+
 </style>
 </head>
 
@@ -18,7 +50,7 @@ input{
 
 <div class="container">
   <form method="POST" action="/login"  >
-      <h2>Login</h2>
+      <h1>Login</h1>
       <input name="nom" type="text" class="form-control" placeholder="usuario"autofocus="true"/><br>
       <input name="contrasenya" type="password" class="form-control" placeholder="Contrasenya"/><br>
       <button type="submit">Login</button>
