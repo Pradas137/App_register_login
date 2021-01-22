@@ -24,11 +24,11 @@ app.post('/', function(req, res) {
     res.send("Hello " + nom);
 })
 
-app.get("/login", function(req, res){
+/*app.get("/login", function(req, res){
     res.render('login',{})
-})
+})*/
 
-app.post("/login", function(req, res){
+/*app.post("/login", function(req, res){
   var usuari = req.body.usuari;
   var contrasenya = req.body.contrasenya;
   var exist = false;
@@ -45,7 +45,7 @@ app.post("/login", function(req, res){
   if (exist == false) {
     res.send("Usuari i/o contrasenya incorrectes. Torna a intentar-ho<br>s")
   }
-})
+})*/
 
 app.get("/register", function(req, res){
   res.render('register',{})
